@@ -6,17 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>这是第二个测试，已经部署github | Hexo</title>
+  <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="没什么，我就是高兴">
+  <meta name="description" content="使用hexo搭建个人博客前期环境准备 node.js下载  cnpm安装 npm install -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.tabao.org cnpm基于node  生成指定文件夹，如d:&#x2F;hexo&#x2F;blog&#x2F;   生成博客 初始化博客 hexo init windows下的hexo好像是要cnpm install?还是cnpm instal">
 <meta property="og:type" content="article">
-<meta property="og:title" content="这是第二个测试，已经部署github">
-<meta property="og:url" content="http://example.com/2021/08/27/%E8%BF%99%E6%98%AF%E7%AC%AC%E4%BA%8C%E4%B8%AA%E6%B5%8B%E8%AF%95%EF%BC%8C%E5%B7%B2%E7%BB%8F%E9%83%A8%E7%BD%B2github/index.html">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/2021/09/06/%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="没什么，我就是高兴">
+<meta property="og:description" content="使用hexo搭建个人博客前期环境准备 node.js下载  cnpm安装 npm install -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.tabao.org cnpm基于node  生成指定文件夹，如d:&#x2F;hexo&#x2F;blog&#x2F;   生成博客 初始化博客 hexo init windows下的hexo好像是要cnpm install?还是cnpm instal">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-08-27T12:36:26.000Z">
-<meta property="article:modified_time" content="2021-08-27T12:37:21.843Z">
+<meta property="article:published_time" content="2021-09-06T13:59:55.343Z">
+<meta property="article:modified_time" content="2021-08-27T12:34:23.224Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -154,27 +154,94 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-这是第二个测试，已经部署github" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-使用hexo搭建个人博客" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      这是第二个测试，已经部署github
-    </h1>
-  
-
-        
-        <a href="/2021/08/27/%E8%BF%99%E6%98%AF%E7%AC%AC%E4%BA%8C%E4%B8%AA%E6%B5%8B%E8%AF%95%EF%BC%8C%E5%B7%B2%E7%BB%8F%E9%83%A8%E7%BD%B2github/" class="archive-article-date">
-  	<time datetime="2021-08-27T12:36:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-27</time>
-</a>
-        
-      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>没什么，我就是高兴</p>
+        <h1 id="使用hexo搭建个人博客"><a href="#使用hexo搭建个人博客" class="headerlink" title="使用hexo搭建个人博客"></a>使用hexo搭建个人博客</h1><h2 id="前期环境准备"><a href="#前期环境准备" class="headerlink" title="前期环境准备"></a>前期环境准备</h2><ol>
+<li><p>node.js下载</p>
+</li>
+<li><p>cnpm安装</p>
+<p><code>npm install -g cnpm --registry=https://registry.npm.tabao.org</code></p>
+<p>cnpm基于node</p>
+</li>
+<li><p>生成指定文件夹，如<code>d:/hexo/blog/</code></p>
+</li>
+</ol>
+<h2 id="生成博客"><a href="#生成博客" class="headerlink" title="生成博客"></a>生成博客</h2><ol>
+<li><p>初始化博客</p>
+<p><code>hexo init</code></p>
+<p>windows下的hexo好像是要<code>cnpm install</code>?还是<code>cnpm install hexo-server</code>?</p>
+<hr>
+</li>
+<li><p>启动博客</p>
+<p>输入命令：<code>hexo s</code> ，<code>s</code>表示<code>start</code></p>
+<hr>
+</li>
+<li><p>新建文章并编写</p>
+<p><code>hexo new &quot;文章标题&quot;</code> ,new 可以简写为 n;</p>
+<p>打开 <code>文章标题.md</code>，以markdown格式书写内容</p>
+<hr>
+</li>
+<li><p>清理，生成新页面</p>
+<p>输入命令<code>hexo clean</code>清理，然后输入<code>hexo g</code>生成<code>文章标题.md</code>对应的页面</p>
+</li>
+</ol>
+<h2 id="部署到github"><a href="#部署到github" class="headerlink" title="部署到github"></a>部署到github</h2><ol>
+<li><p>新建仓库</p>
+<p>用户部署的个人博客的GitHub仓库必须符合特定的命名要求，<code>账号名+github.io</code>，如新建仓库名：<code>sunyatatu.github.io</code>。    </p>
+<hr>
+</li>
+<li><p>安装git部署的插件</p>
+<p><strong>输入命令：<code>cnpm install --save hexo-deployer-git</code></strong></p>
+<hr>
+</li>
+<li><p>更改Deployment下的属性</p>
+<p>打开<code>_config.yml</code>文件，修改Deployment配置下的属性</p>
+<p><code>type: git</code></p>
+<p><code>repo:  git@github.com:sunyatatu/sunyatatu.github.io.git</code></p>
+<p><code>branch: master</code></p>
+<hr>
+</li>
+<li><p>部署到远程的github仓库</p>
+<p><strong>输入命令：<code>hexo d</code>(d表示deployer)，将hexo项目推到远端。</strong></p>
+<p>输入github账号密码</p>
+<p>若没有给git配置过，使用</p>
+<p><code>git config --global user.name &quot;your name&quot;</code></p>
+<p><code>git config --global user.email &quot;your email&quot;</code></p>
+</li>
+</ol>
+<h2 id="自定义主题"><a href="#自定义主题" class="headerlink" title="自定义主题"></a>自定义主题</h2><ul>
+<li><p>模板网站：<code>github.com/litten/hexo-theme-yilia</code></p>
+<hr>
+</li>
+<li><p>下载主题到本地文件夹theme中，如</p>
+<p><code>git clone 地址 文件夹路经(theme/lilia)</code></p>
+<hr>
+</li>
+<li><p>修改配置文件_config.yml</p>
+<p><code>theme: yilia</code></p>
+<hr>
+</li>
+<li><p>清理生成</p>
+<p>清理：<code>hexo clean</code>  生成： <code>hexo g</code>  启动： <code>hexo s</code></p>
+<hr>
+</li>
+<li><p>推送到远端</p>
+<p><code>hexo d</code></p>
+</li>
+</ul>
+<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><ul>
+<li><p>使用过程是hexo部署出现了问题，经查询发现需要本地生成公钥：</p>
+<p><code>ssh-keygen -t rsa -C &quot;xxx@xxx.com&quot;</code>，一路回车。</p>
+<p>成功的话会在<code>c:/用户/chang/.ssh/id_rsa.pub</code>文件中生成公钥，将其内容完整复制到github的SSH设置中，即可。</p>
+<hr>
+</li>
+<li><p>注意：</p>
+<p>​    _config.yml中的<code>repo:  git@github.com:sunyatatu/sunyatatu.github.io.git</code>，是SSH类型的，不是HTTPS，注意区分。</p>
+</li>
+</ul>
 
       
 
@@ -254,7 +321,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/08/27/%E8%BF%99%E6%98%AF%E7%AC%AC%E4%BA%8C%E4%B8%AA%E6%B5%8B%E8%AF%95%EF%BC%8C%E5%B7%B2%E7%BB%8F%E9%83%A8%E7%BD%B2github/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/09/06/%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -268,7 +335,7 @@
   
 <nav id="article-nav">
   
-    <a href="/2021/09/06/%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2021/09/06/%E5%86%85%E9%83%A8%E7%B1%BB/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
@@ -278,8 +345,8 @@
     </a>
   
   
-    <a href="/2021/08/27/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">我的第一篇博客</div>
+    <a href="/2021/08/27/%E8%BF%99%E6%98%AF%E7%AC%AC%E4%BA%8C%E4%B8%AA%E6%B5%8B%E8%AF%95%EF%BC%8C%E5%B7%B2%E7%BB%8F%E9%83%A8%E7%BD%B2github/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">这是第二个测试，已经部署github</div>
       <i class="icon-circle-right"></i>
     </a>
   

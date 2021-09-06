@@ -6,17 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>这是第二个测试，已经部署github | Hexo</title>
+  <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="没什么，我就是高兴">
+  <meta name="description" content="内部类四种内部类： 局部内部类、匿名内部类、成员内部类、静态内部类。 局部内部类 通常在方法中（定义在外部类的局部位置，方法或者代码块）  不能添加访问修饰符，但可以使用final（因为是局部变量）  作用域：方法或者代码块中  局部内部类可以直接访问外部类的所有成员，包括私有  外部类访问，需要创建外部类对象（需在作用域内，方法体或代码块）  外部其他类不能访问局部内部类  外部类和局部内部类成">
 <meta property="og:type" content="article">
-<meta property="og:title" content="这是第二个测试，已经部署github">
-<meta property="og:url" content="http://example.com/2021/08/27/%E8%BF%99%E6%98%AF%E7%AC%AC%E4%BA%8C%E4%B8%AA%E6%B5%8B%E8%AF%95%EF%BC%8C%E5%B7%B2%E7%BB%8F%E9%83%A8%E7%BD%B2github/index.html">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/2021/09/06/%E5%86%85%E9%83%A8%E7%B1%BB/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="没什么，我就是高兴">
+<meta property="og:description" content="内部类四种内部类： 局部内部类、匿名内部类、成员内部类、静态内部类。 局部内部类 通常在方法中（定义在外部类的局部位置，方法或者代码块）  不能添加访问修饰符，但可以使用final（因为是局部变量）  作用域：方法或者代码块中  局部内部类可以直接访问外部类的所有成员，包括私有  外部类访问，需要创建外部类对象（需在作用域内，方法体或代码块）  外部其他类不能访问局部内部类  外部类和局部内部类成">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-08-27T12:36:26.000Z">
-<meta property="article:modified_time" content="2021-08-27T12:37:21.843Z">
+<meta property="article:published_time" content="2021-09-06T14:00:34.249Z">
+<meta property="article:modified_time" content="2021-09-03T07:53:03.736Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -154,27 +154,66 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-这是第二个测试，已经部署github" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-内部类" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      这是第二个测试，已经部署github
-    </h1>
-  
-
-        
-        <a href="/2021/08/27/%E8%BF%99%E6%98%AF%E7%AC%AC%E4%BA%8C%E4%B8%AA%E6%B5%8B%E8%AF%95%EF%BC%8C%E5%B7%B2%E7%BB%8F%E9%83%A8%E7%BD%B2github/" class="archive-article-date">
-  	<time datetime="2021-08-27T12:36:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-27</time>
-</a>
-        
-      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>没什么，我就是高兴</p>
+        <h1 id="内部类"><a href="#内部类" class="headerlink" title="内部类"></a>内部类</h1><p>四种内部类：</p>
+<p>局部内部类、匿名内部类、成员内部类、静态内部类。</p>
+<h2 id="局部内部类"><a href="#局部内部类" class="headerlink" title="局部内部类"></a>局部内部类</h2><ul>
+<li><p>通常在方法中（定义在外部类的局部位置，方法或者代码块）</p>
+</li>
+<li><p>不能添加访问修饰符，但可以使用final（因为是局部变量）</p>
+</li>
+<li><p>作用域：<strong>方法</strong>或者<strong>代码块</strong>中</p>
+</li>
+<li><p>局部内部类可以直接访问外部类的所有成员，包括私有</p>
+</li>
+<li><p>外部类访问，需要创建外部类对象（需在作用域内，方法体或代码块）</p>
+</li>
+<li><p>外部其他类不能访问局部内部类</p>
+</li>
+<li><p>外部类和局部内部类成员重名时，默认遵守就近原则，如果想访问外部类的成员，则可以使用（外部类.this.成员）</p>
+<p>​        <em>外部类.this代表调用该内部类的外部类对象</em></p>
+</li>
+</ul>
+<h2 id="匿名内部类（十分重要哦）"><a href="#匿名内部类（十分重要哦）" class="headerlink" title="匿名内部类（十分重要哦）"></a>匿名内部类（十分重要哦）</h2><ul>
+<li>本质是类，该类没有名字，同时还是一个对象</li>
+<li>必须是定义在外部类的局部位置（<strong>代码块或方法内</strong>），必须记住！！！</li>
+</ul>
+<h3 id="基于接口的匿名内部类"><a href="#基于接口的匿名内部类" class="headerlink" title="基于接口的匿名内部类"></a>基于接口的匿名内部类</h3><ul>
+<li><p>需求：想使用IA接口并创建对象，传统开发方式是写一个类实现该接口，并创建对象，而一般<strong>只使用一次的类</strong>通过设计一个类并创建对象过于繁琐，需要定义很多类，于是可以<strong>使用匿名内部类</strong>简化开发</p>
+</li>
+<li><p><code>IA tiger = new IA &#123; @Override method()&#123;...&#125; &#125;</code></p>
+<p>tiger的编译类型？<code>IA</code></p>
+<p>tiger的运行类型？<code>就是匿名内部类 Outer$1  </code>,注意，不是<code>IA$1</code>，因为IA不是其外部类</p>
+<p>底层创建一个名为<code>IA$1</code>的内部类，只是该匿名内部类在底层使用一次后就回收了，但是<code>该匿名内部类创建的对象可以永久保存下来</code>，即tiger可以保存下来反复调用</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">IA</span>$1 <span class="keyword">implements</span> <span class="title">IA</span></span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    method()&#123;</span><br><span class="line">        ...</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="基于类的匿名内部类"><a href="#基于类的匿名内部类" class="headerlink" title="基于类的匿名内部类"></a>基于类的匿名内部类</h3><ul>
+<li><p><code>Father father =  new Father( &quot;jack&quot; ) **&#123;...&#125;** </code>，Father是定义在Outter内部的内部类，不是抽象类，而是具体的类</p>
+<p>不带大括号：运行类型为Father</p>
+<p>带了大括号：运行类型为<code>Outter$1</code> 而不是Father，底层会返回匿名内部类，尾部的$1是底层自动生成的匿名内部类，全类名为<code>Outter$1</code></p>
+</li>
+<li><p>基于抽象类的内部类需要重写方法</p>
+</li>
+</ul>
+<h2 id="成员内部类"><a href="#成员内部类" class="headerlink" title="成员内部类"></a>成员内部类</h2><ul>
+<li>可以访问外部类的所有成员，包含私有，直接访问就可以了</li>
+<li>定义在外部类的成员位置上</li>
+<li>可以添加任意的修饰符 </li>
+<li>作用域和外部类的成员属性一样，为整个类体</li>
+<li><strong>外部类可以访问到成员内部类</strong></li>
+<li>就近原则访问属性</li>
+</ul>
+<h2 id="静态内部类"><a href="#静态内部类" class="headerlink" title="静态内部类"></a>静态内部类</h2><ul>
+<li>放在外部类的成员位置</li>
+<li>使用static修饰</li>
+<li>可以直接访问外部类所有的静态成员，包括私有，但<strong>不能访问非静态成员</strong></li>
+<li>可以添加任意访问修饰符</li>
+<li>作用域为整个类体</li>
+</ul>
 
       
 
@@ -254,7 +293,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/08/27/%E8%BF%99%E6%98%AF%E7%AC%AC%E4%BA%8C%E4%B8%AA%E6%B5%8B%E8%AF%95%EF%BC%8C%E5%B7%B2%E7%BB%8F%E9%83%A8%E7%BD%B2github/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/09/06/%E5%86%85%E9%83%A8%E7%B1%BB/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -268,18 +307,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2021/09/06/%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          (no title)
-        
-      </div>
-    </a>
   
-  
-    <a href="/2021/08/27/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">我的第一篇博客</div>
+    <a href="/2021/09/06/%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
       <i class="icon-circle-right"></i>
     </a>
   
